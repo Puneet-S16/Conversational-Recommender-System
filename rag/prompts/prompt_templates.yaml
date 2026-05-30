@@ -1,0 +1,134 @@
+# --- GenAI Recommender System: Conversational Prompt Templates ---
+# These templates produce natural, concise conversational summaries.
+
+# Standard recommendation prompt
+standard_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a short, natural conversational summary based on the products found.
+  - Explain why these items were selected based on the user's query and preferences.
+  - DO NOT list product names, prices, materials, or detailed specs in your text response.
+  - DO NOT use markdown bullet points for product details.
+  - Keep the response under 3 sentences.
+  - Focus on your understanding of their interest.
+
+  Response:
+
+# Budget-focused recommendations (Value for money)
+budget_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary focused on value and affordability.
+  - Explain how these choices fit the user's budget without listing specific prices.
+  - DO NOT list product names or detailed specs.
+  - Keep the response concise and helpful.
+
+  Response:
+
+# Modern furniture (Contemporary/Trending)
+modern_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary highlighting the modern and trending aspects of the selection.
+  - Explain the aesthetic fit without listing specific product details.
+  - DO NOT list product names or detailed specs.
+
+  Response:
+
+# Wooden furniture (Natural/Organic)
+wooden_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary focusing on the natural materials and craftsmanship.
+  - Explain the selection logic without listing specific product details.
+  - DO NOT list product names or detailed specs.
+
+  Response:
+
+# Luxury furniture (Premium/Elite)
+luxury_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary emphasizing quality, exclusivity, and premium design.
+  - Explain the selection logic without listing specific product details.
+  - DO NOT list product names or detailed specs.
+
+  Response:
+
+# Office furniture (Professional/Ergonomic)
+office_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary focused on productivity, ergonomics, and professional style.
+  - Explain the selection logic without listing specific product details.
+  - DO NOT list product names or detailed specs.
+
+  Response:
+
+# Minimal style (Clean/Simple)
+minimal_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary highlighting simplicity, clean lines, and functionality.
+  - Explain the selection logic without listing specific product details.
+  - DO NOT list product names or detailed specs.
+
+  Response:
+
+# Industrial style (Raw/Utilitarian)
+industrial_recommendation: |
+  ### Retrieved Products:
+  {context}
+
+  ### User Request:
+  Query: {query}
+  Preferences: {preferences}
+
+  ### Instructions:
+  - Provide a natural conversational summary focusing on raw materials and utilitarian design.
+  - Explain the selection logic without listing specific product details.
+  - DO NOT list product names or detailed specs.
+
+  Response:
